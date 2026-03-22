@@ -1,0 +1,186 @@
+"""claudekit.errors -- Structured error hierarchy for the claudekit package.
+
+This module re-exports every public name so that callers can simply write::
+
+    from claudekit.errors import RateLimitError, enable_rich_errors
+
+Submodules
+----------
+_codes
+    Machine-readable error code string constants.
+_base
+    The full exception class hierarchy.
+_rich
+    SDK exception wrapping utilities and the ``enable_rich_errors()`` hook.
+"""
+
+from __future__ import annotations
+
+# -- Error codes -------------------------------------------------------------
+from claudekit.errors._codes import (
+    AGENT_MAX_TURNS,
+    AGENT_TIMEOUT,
+    API_CONNECTION_ERROR,
+    API_TIMEOUT,
+    BATCH_CANCELLED,
+    BATCH_NOT_READY,
+    BATCH_PARTIAL_FAILURE,
+    BUDGET_EXCEEDED,
+    CONFIGURATION_ERROR,
+    CONTEXT_WINDOW_EXCEEDED,
+    DELEGATION_LOOP,
+    DEPRECATED_MODEL,
+    JAILBREAK_DETECTED,
+    MEMORY_BACKEND_ERROR,
+    MEMORY_KEY_NOT_FOUND,
+    MEMORY_VALUE_TOO_LARGE,
+    MISSING_API_KEY,
+    OUTPUT_VALIDATION_FAILED,
+    OVERLOADED,
+    PII_DETECTED,
+    PLATFORM_NOT_AVAILABLE,
+    PRICE_DISCLOSURE_DETECTED,
+    PROMPT_INJECTION_DETECTED,
+    RATE_LIMIT_EXCEEDED,
+    SESSION_BUDGET_EXCEEDED,
+    SESSION_NAME_CONFLICT,
+    SESSION_PAUSED,
+    SESSION_TERMINATED,
+    TOKEN_LIMIT_EXCEEDED,
+    TOOL_BLOCKED,
+    TOOL_INPUT_VALIDATION_FAILED,
+    TOOL_JSON_ERROR,
+    TOOL_RESULT_TOO_LARGE,
+)
+
+# -- Exception hierarchy -----------------------------------------------------
+from claudekit.errors._base import (
+    AgentError,
+    AgentMaxTurnsError,
+    AgentTimeoutError,
+    BatchCancelledError,
+    BatchError,
+    BatchNotReadyError,
+    BatchPartialFailureError,
+    BudgetError,
+    BudgetExceededError,
+    ClaudekitError,
+    ClaudekitMemoryError,
+    ConfigurationError,
+    ContextWindowExceededError,
+    DelegationLoopError,
+    DeprecatedModelError,
+    JailbreakDetectedError,
+    MemoryBackendError,
+    MemoryKeyNotFoundError,
+    MemoryValueTooLargeError,
+    MissingAPIKeyError,
+    OrchestratorError,
+    OutputValidationError,
+    OverloadedError,
+    PIIDetectedError,
+    PlatformNotAvailableError,
+    PrecheckError,
+    PromptInjectionError,
+    RateLimitError,
+    SecurityError,
+    SessionBudgetExceededError,
+    SessionError,
+    SessionNameConflictError,
+    SessionPausedError,
+    SessionTerminatedError,
+    TokenLimitError,
+    ToolBlockedError,
+    ToolInputValidationError,
+    ToolJSONError,
+    ToolResultTooLargeWarning,
+)
+
+# -- Rich error helpers ------------------------------------------------------
+from claudekit.errors._rich import (
+    DeprecatedModelWarning,
+    enable_rich_errors,
+    wrap_sdk_error,
+)
+
+__all__ = [
+    # Codes
+    "AGENT_MAX_TURNS",
+    "AGENT_TIMEOUT",
+    "API_CONNECTION_ERROR",
+    "API_TIMEOUT",
+    "BATCH_CANCELLED",
+    "BATCH_NOT_READY",
+    "BATCH_PARTIAL_FAILURE",
+    "BUDGET_EXCEEDED",
+    "CONFIGURATION_ERROR",
+    "CONTEXT_WINDOW_EXCEEDED",
+    "DELEGATION_LOOP",
+    "DEPRECATED_MODEL",
+    "JAILBREAK_DETECTED",
+    "MEMORY_BACKEND_ERROR",
+    "MEMORY_KEY_NOT_FOUND",
+    "MEMORY_VALUE_TOO_LARGE",
+    "MISSING_API_KEY",
+    "OUTPUT_VALIDATION_FAILED",
+    "OVERLOADED",
+    "PII_DETECTED",
+    "PLATFORM_NOT_AVAILABLE",
+    "PRICE_DISCLOSURE_DETECTED",
+    "PROMPT_INJECTION_DETECTED",
+    "RATE_LIMIT_EXCEEDED",
+    "SESSION_BUDGET_EXCEEDED",
+    "SESSION_NAME_CONFLICT",
+    "SESSION_PAUSED",
+    "SESSION_TERMINATED",
+    "TOKEN_LIMIT_EXCEEDED",
+    "TOOL_BLOCKED",
+    "TOOL_INPUT_VALIDATION_FAILED",
+    "TOOL_JSON_ERROR",
+    "TOOL_RESULT_TOO_LARGE",
+    # Exceptions
+    "AgentError",
+    "AgentMaxTurnsError",
+    "AgentTimeoutError",
+    "BatchCancelledError",
+    "BatchError",
+    "BatchNotReadyError",
+    "BatchPartialFailureError",
+    "BudgetError",
+    "BudgetExceededError",
+    "ClaudekitError",
+    "ClaudekitMemoryError",
+    "ConfigurationError",
+    "ContextWindowExceededError",
+    "DelegationLoopError",
+    "DeprecatedModelError",
+    "JailbreakDetectedError",
+    "MemoryBackendError",
+    "MemoryKeyNotFoundError",
+    "MemoryValueTooLargeError",
+    "MissingAPIKeyError",
+    "OrchestratorError",
+    "OutputValidationError",
+    "OverloadedError",
+    "PIIDetectedError",
+    "PlatformNotAvailableError",
+    "PrecheckError",
+    "PromptInjectionError",
+    "RateLimitError",
+    "SecurityError",
+    "SessionBudgetExceededError",
+    "SessionError",
+    "SessionNameConflictError",
+    "SessionPausedError",
+    "SessionTerminatedError",
+    "TokenLimitError",
+    "ToolBlockedError",
+    "ToolInputValidationError",
+    "ToolJSONError",
+    "ToolResultTooLargeWarning",
+    # Warnings
+    "DeprecatedModelWarning",
+    # Rich error helpers
+    "enable_rich_errors",
+    "wrap_sdk_error",
+]

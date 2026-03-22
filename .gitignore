@@ -1,0 +1,96 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+coverage/
+htmlcov/
+*.cover
+.hypothesis/
+junit.xml
+test-results/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+
+# Linting & formatting
+.ruff_cache/
+
+# Build / packaging
+*.so
+*.dylib
+*.dll
+MANIFEST
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# claudekit runtime files
+memory.db
+memory.json
+batches.json
+prompts.json
+*.db
+*.db-shm
+*.db-wal
+
+# Validation / test artifacts
+validate_all*
+validate_*.py
+validate_*.sh
+test_output/
+.test_cache/
+
+# Secrets / credentials
+*.pem
+*.key
+*.crt
+*.p12
+credentials.json
+service_account*.json
