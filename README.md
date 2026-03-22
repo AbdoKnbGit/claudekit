@@ -9,7 +9,7 @@
 *Track costs. Enforce policies. Build agents. Ship faster.*
 
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.0-brightgreen.svg)](pyproject.toml)
+[![Version](https://img.shields.io/badge/version-0.1.1-brightgreen.svg)](pyproject.toml)
 [![Python ≥3.10](https://img.shields.io/badge/python-%3E%3D3.10-3776ab.svg)](pyproject.toml)
 [![Anthropic SDK](https://img.shields.io/badge/anthropic--sdk-%3E%3D0.86-orange.svg)](pyproject.toml)
 [![Agent SDK](https://img.shields.io/badge/agent--sdk-supported-purple.svg)](claudekit-docs/docs/modules/agents.md)

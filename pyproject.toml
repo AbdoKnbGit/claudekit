@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "claudekit"
-version = "0.1.0"
+version = "0.1.1"
 description = "Production-grade Python developer toolkit wrapping the entire Anthropic ecosystem"
 readme = "README.md"
 license = "MIT"
