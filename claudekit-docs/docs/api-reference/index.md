@@ -21,7 +21,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.client → [Client docs](../modules/client.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `create_client()` | function | Auto-detect platform from env vars, returns matching client |
 | `TrackedClient` | class | Sync Anthropic SDK wrapper with usage tracking |
 | `AsyncTrackedClient` | class | Async variant of TrackedClient |
@@ -36,7 +36,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.models → [Models docs](../modules/models.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `MODELS` | `list[Model]` | All models including deprecated |
 | `MODELS_BY_ID` | `dict[str, Model]` | Lookup by API ID or alias |
 | `get_model(id)` | function | Returns `Model` by ID or alias |
@@ -49,7 +49,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.security → [Security docs](../modules/security.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `SecurityLayer` | class | Ordered policy pipeline applied to every call |
 | `Policy` | class | Factory class with static methods for all built-in policies |
 | `InputSanitizerPolicy` | class | Strip HTML/scripts, truncate inputs |
@@ -71,7 +71,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.memory → [Memory docs](../modules/memory.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `MemoryStore` | class | Backend-agnostic memory store |
 | `MemoryEntry` | dataclass | Single memory record with TTL and metadata |
 | `SQLiteBackend` | class | SQLite + FTS5 backend (recommended) |
@@ -84,7 +84,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.skills → [Skills docs](../modules/skills.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `Skill` | dataclass | Portable capability bundle |
 | `SkillRegistry` | class | Named skill lookup registry |
 | `SummarizerSkill` | class | Pre-built summarization skill |
@@ -98,7 +98,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.sessions → [Sessions docs](../modules/sessions.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `SessionManager` | class | Create and manage multiple sessions |
 | `Session` | class | Single managed conversation session |
 | `SessionConfig` | dataclass | Declarative session configuration |
@@ -109,7 +109,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.tools → [Tools docs](../modules/tools.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `tool` | decorator | Convert Python function to Anthropic tool definition |
 | `ToolWrapper` | class | Callable wrapper with `.to_dict()` and `.name` |
 | `ToolRegistry` | class | Named tool registry with `.to_anthropic_format()` and `.to_agent_sdk_format()` |
@@ -130,7 +130,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.thinking → [Thinking docs](../modules/thinking.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `thinking_enabled(budget_tokens)` | function | Returns `{"type": "enabled", "budget_tokens": N}` |
 | `thinking_adaptive(budget_tokens)` | function | Returns `{"type": "adaptive", "budget_tokens": N}` |
 | `thinking_disabled()` | function | Returns `{"type": "disabled"}` |
@@ -141,7 +141,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.plugins → [Plugins docs](../modules/plugins.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `PluginLoader` | class | Manages and dispatches hooks to all loaded plugins |
 | `Plugin` | class | Base class for custom plugins |
 | `LoggingPlugin` | class | Structured logging for all lifecycle events |
@@ -153,7 +153,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.orchestration → [Orchestration docs](../modules/orchestration.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `Orchestrator` | class | Multi-agent control plane |
 | `RuleRouter` | class | Keyword/regex routing rules |
 | `LLMRouter` | class | LLM-based task classification |
@@ -165,7 +165,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.agents → [Agents docs](../modules/agents.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `Agent` | dataclass | Declarative agent definition |
 | `AgentRunner` | class | Execute agent via Claude Agent SDK subprocess |
 | `AgentResult` | dataclass | Run outcome |
@@ -178,7 +178,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.batches → [Batches docs](../modules/batches.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `BatchBuilder` | class | Fluent batch request constructor |
 | `BatchManager` | class | Submit, poll, cancel, retrieve batch results |
 | `BatchResult` | dataclass | Full batch result with items and stats |
@@ -189,7 +189,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.precheck → [Precheck docs](../modules/precheck.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `TokenCounter` | class | Pre-flight token counting |
 | `TokenCountResult` | dataclass | Count result with cost estimate and warnings |
 
@@ -198,7 +198,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.prompts → [Prompts docs](../modules/prompts.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `PromptManager` | class | Versioned prompt storage and comparison |
 | `PromptVersion` | dataclass | Single prompt version with template |
 | `ComparisonResult` | dataclass | A/B comparison outputs and costs |
@@ -208,7 +208,7 @@ from claudekit import TrackedBedrockClient, TrackedVertexClient, TrackedFoundryC
 ## claudekit.testing → [Testing docs](../modules/testing.md)
 
 | Symbol | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `MockClient` | class | Drop-in TrackedClient mock with pattern routing |
 | `MockClientUnexpectedCallError` | exception | Raised in strict mode on unmatched call |
 | `MockStreamContext` | class | Mock streaming context manager |

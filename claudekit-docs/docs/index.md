@@ -11,7 +11,8 @@ claudekit is a production-grade Python framework built on top of the Anthropic S
 ## What claudekit provides
 
 | Layer | Capability |
-|---|---|
+| --- | --- |
+| **Models** | Model registry with pricing, capabilities, aliases, and task-based selection via `select_model()` |
 | **Observability** | Per-call token and cost tracking, CSV export, per-model breakdown |
 | **Security** | Request/response policy pipeline with 8 built-in policies and 5 presets |
 | **Memory** | Persistent key-value store with SQLite/JSON backends and full-text search |

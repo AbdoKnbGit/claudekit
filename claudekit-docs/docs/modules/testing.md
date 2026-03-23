@@ -11,7 +11,7 @@ exports: [MockClient, create_mock_anthropic, MockAgentRunner, MockAgentResult, M
 `claudekit.testing` provides two levels of mocking and a suite of assertion helpers — all without making real API calls.
 
 | Tool | What it mocks | Fidelity |
-|---|---|---|
+| --- | --- | --- |
 | `MockClient` | Drop-in for `TrackedClient` | High-level, no SDK validation |
 | `create_mock_anthropic` | httpx transport in real SDK | Full SDK stack (auth, Pydantic, retries) |
 | `MockAgentRunner` | Drop-in for `AgentRunner` | Agent result simulation |

@@ -147,7 +147,7 @@ class AuditPlugin(Plugin):
 ### Hook signatures
 
 | Hook | Signature | Notes |
-|---|---|---|
+| --- | --- | --- |
 | `on_request` | `(messages, model, context)` | Before API call |
 | `on_response` | `(response, context) -> response` | Must return response |
 | `on_tool_call` | `(tool_name, tool_input, context) -> None\|result` | Return non-None to short-circuit |

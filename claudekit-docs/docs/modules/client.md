@@ -227,7 +227,7 @@ usage.export_csv()     # CSV string
 Dataclass recorded for each API call.
 
 | Field | Type | Description |
-|---|---|---|
+| --- | --- | --- |
 | `model` | `str` | Model API ID |
 | `input_tokens` | `int` | Input token count |
 | `output_tokens` | `int` | Output token count |

@@ -12,7 +12,7 @@ exports: [MODELS, MODELS_BY_ID, get_model, select_model, ModelTask, Model]
 ## Active Models (as of 2026-03-20)
 
 | Model | API ID | Input $/MTok | Output $/MTok | Context |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Claude Opus 4.6 | `claude-opus-4-6` | $5.00 | $25.00 | 1M |
 | Claude Sonnet 4.6 | `claude-sonnet-4-6` | $3.00 | $15.00 | 1M |
 | Claude Haiku 4.5 | `claude-haiku-4-5-20251001` | $1.00 | $5.00 | 200K |
@@ -29,7 +29,7 @@ All active models support thinking, vision, and streaming.
 Short aliases resolve to the current snapshot:
 
 | Alias | Resolves to |
-|---|---|
+| --- | --- |
 | `claude-haiku-4-5` | `claude-haiku-4-5-20251001` |
 | `claude-opus-4-5` | `claude-opus-4-5-20251101` |
 | `claude-sonnet-4-5` | `claude-sonnet-4-5-20250929` |

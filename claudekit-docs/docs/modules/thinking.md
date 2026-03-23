@@ -89,7 +89,7 @@ print(answer)     # The final text answer
 ## Token budget guidance
 
 | Task difficulty | Recommended `budget_tokens` | Notes |
-|---|---|---|
+| --- | --- | --- |
 | Simple | 1 000–2 000 | Classification, short Q&A |
 | Moderate | 3 000–8 000 | Multi-step reasoning, code review |
 | Complex | 10 000–20 000 | Proofs, architecture decisions |

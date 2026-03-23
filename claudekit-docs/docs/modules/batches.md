@@ -88,6 +88,7 @@ result = await bm.wait(
     poll_interval=5.0,    # seconds between polls
     max_wait=3600.0,      # total timeout seconds
 )
+```
 
 ### Cancel
 
@@ -126,7 +127,7 @@ pending = bm.list_pending()   # list[str] — IDs of in-progress batches
 ## Errors
 
 | Exception | When raised |
-|---|---|
+| --- | --- |
 | `BatchNotReadyError` | Polling when batch is still in progress |
 | `BatchCancelledError` | Cancelling already-cancelled batch, or cancelled before completion |
 | `BatchPartialFailureError` | All requests processed but some errored |
