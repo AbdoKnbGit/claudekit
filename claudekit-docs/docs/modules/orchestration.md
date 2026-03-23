@@ -1,11 +1,6 @@
----
-title: Orchestration
-description: Orchestrator manages named Agent definitions, routes tasks to them via RuleRouter/LLMRouter/ManualRouter, handles agent-to-agent delegation, and aggregates cost.
-module: claudekit.orchestration
-classes: [Orchestrator, RuleRouter, LLMRouter, ManualRouter, OrchestrationResult]
----
-
 # Orchestration
+
+**Module:** `claudekit.orchestration` · **Classes:** `Orchestrator`, `RuleRouter`, `LLMRouter`, `ManualRouter`, `OrchestrationResult`
 
 `claudekit.orchestration` provides the `Orchestrator` — the central control plane for multi-agent workflows. It routes tasks to the right agent, handles agent-to-agent delegation, detects loops, and enforces a cost ceiling.
 

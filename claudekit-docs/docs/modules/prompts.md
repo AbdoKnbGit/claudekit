@@ -1,11 +1,6 @@
----
-title: Prompts
-description: PromptManager for versioned prompt storage, unified diff between versions, A/B comparison across versions and inputs, and template rendering.
-module: claudekit.prompts
-classes: [PromptManager, PromptVersion, ComparisonResult]
----
-
 # Prompts
+
+**Module:** `claudekit.prompts` · **Classes:** `PromptManager`, `PromptVersion`, `ComparisonResult`
 
 `claudekit.prompts` provides `PromptManager` — version-controlled prompt storage with diff, A/B comparison, and variable template rendering. Uses JSON file storage by default.
 

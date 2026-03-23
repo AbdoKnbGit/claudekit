@@ -1,11 +1,6 @@
----
-title: Models
-description: Model registry with pricing, capabilities, and aliases for all Claude models. Includes select_model() for task-based model selection.
-module: claudekit.models
-exports: [MODELS, MODELS_BY_ID, get_model, select_model, ModelTask, Model]
----
-
 # Models
+
+**Module:** `claudekit.models` · **Exports:** `MODELS`, `MODELS_BY_ID`, `get_model`, `select_model`, `ModelTask`, `Model`
 
 `claudekit.models` provides a typed registry of every Claude model with accurate pricing, context windows, capability flags, deprecation status, and Bedrock/Vertex IDs.
 

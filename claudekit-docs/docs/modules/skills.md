@@ -1,11 +1,6 @@
----
-title: Skills
-description: Portable AI capability bundles combining system prompt, model, tools, output validation, memory, and security into a single composable unit.
-module: claudekit.skills
-classes: [Skill, SkillRegistry, SummarizerSkill, ClassifierSkill, DataExtractorSkill, CodeReviewerSkill, ResearcherSkill]
----
-
 # Skills
+
+**Module:** `claudekit.skills` · **Classes:** `Skill`, `SkillRegistry`, `SummarizerSkill`, `ClassifierSkill`, `DataExtractorSkill`, `CodeReviewerSkill`, `ResearcherSkill`
 
 `claudekit.skills` provides `Skill` — a portable bundle of system prompt, model, tools, output validation, memory, and security. Skills are the primary unit of reuse and composition in claudekit.
 

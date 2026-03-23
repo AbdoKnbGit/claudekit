@@ -1,12 +1,6 @@
----
-title: Testing
-description: Zero-API testing utilities — MockClient, create_mock_anthropic (realistic httpx transport), MockAgentRunner, MockSession, assertion helpers, and response recording.
-module: claudekit.testing
-classes: [MockClient, MockAgentRunner, MockSession, MockSessionManager, ResponseRecorder]
-exports: [MockClient, create_mock_anthropic, MockAgentRunner, MockAgentResult, MockSession, MockSessionManager, assert_response, assert_agent_result, expect, ResponseRecorder]
----
-
 # Testing
+
+**Module:** `claudekit.testing` · **Classes:** `MockClient`, `MockAgentRunner`, `MockSession`, `MockSessionManager`, `ResponseRecorder`
 
 `claudekit.testing` provides two levels of mocking and a suite of assertion helpers — all without making real API calls.
 

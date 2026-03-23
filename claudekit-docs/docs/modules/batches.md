@@ -1,11 +1,6 @@
----
-title: Batches
-description: BatchBuilder (fluent request constructor) and BatchManager (submit, poll, cancel, and retrieve results from the Anthropic Message Batches API at 50% cost).
-module: claudekit.batches
-classes: [BatchBuilder, BatchManager, BatchResult, BatchStats]
----
-
 # Batches
+
+**Module:** `claudekit.batches` · **Classes:** `BatchBuilder`, `BatchManager`, `BatchResult`, `BatchStats`
 
 `claudekit.batches` wraps the Anthropic Message Batches API. Batches are processed asynchronously at 50% the regular per-token cost. Use them for high-volume, non-latency-sensitive workloads.
 

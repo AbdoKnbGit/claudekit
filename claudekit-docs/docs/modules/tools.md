@@ -1,12 +1,6 @@
----
-title: Tools
-description: The @tool decorator turns Python functions into Anthropic tool definitions. Parses signatures and Google-style docstrings to generate JSON schema automatically.
-module: claudekit.tools
-classes: [ToolWrapper, ToolRegistry]
-exports: [tool, ToolRegistry]
----
-
 # Tools
+
+**Module:** `claudekit.tools` · **Classes:** `ToolWrapper`, `ToolRegistry`
 
 `claudekit.tools` provides the `@tool` decorator, which converts Python functions into Anthropic-compatible tool definitions. It inspects type annotations and Google-style docstrings to build the JSON schema automatically.
 

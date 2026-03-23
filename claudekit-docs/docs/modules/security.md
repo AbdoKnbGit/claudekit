@@ -1,11 +1,6 @@
----
-title: Security
-description: SecurityLayer and Policy pipeline. Applies ordered policies to every request and response. 8 built-in policies, 5 presets, and a composable API.
-module: claudekit.security
-classes: [SecurityLayer, Policy, InputSanitizerPolicy, PromptInjectionPolicy, JailbreakPolicy, PIIPolicy, OutputSchemaPolicy, RateLimitPolicy, BudgetCapPolicy, ToolGuardPolicy]
----
-
 # Security
+
+**Module:** `claudekit.security` · **Classes:** `SecurityLayer`, `Policy`, `InputSanitizerPolicy`, `PromptInjectionPolicy`, `JailbreakPolicy`, `PIIPolicy`, `OutputSchemaPolicy`, `RateLimitPolicy`, `BudgetCapPolicy`, `ToolGuardPolicy`
 
 `claudekit.security` provides a composable policy pipeline applied to every Claude API call. Policies run in order on the request before it is sent, and on the response before it is returned to the caller.
 

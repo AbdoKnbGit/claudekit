@@ -1,12 +1,6 @@
----
-title: Memory
-description: MemoryStore and backend drivers for cross-session key-value persistence with TTL, search, and optional SQLite or JSON file storage.
-module: claudekit.memory
-classes: [MemoryStore, MemoryEntry, SQLiteBackend, JSONFileBackend, AbstractBackend]
-exports: [MemoryStore, MemoryEntry, SQLiteBackend, JSONFileBackend, context_with_memory]
----
-
 # Memory
+
+**Module:** `claudekit.memory` · **Classes:** `MemoryStore`, `MemoryEntry`, `SQLiteBackend`, `JSONFileBackend`, `AbstractBackend`
 
 `claudekit.memory` provides cross-session, scoped key-value storage with TTL, full-text search, and pluggable backends.
 

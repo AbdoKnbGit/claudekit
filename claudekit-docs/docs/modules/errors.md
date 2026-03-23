@@ -1,11 +1,6 @@
----
-title: Errors
-description: Full error hierarchy rooted at ClaudekitError. Every exception carries message, code, context dict, and recovery_hint.
-module: claudekit.errors
-classes: [ClaudekitError]
----
-
 # Errors
+
+**Module:** `claudekit.errors` · **Classes:** `ClaudekitError` (and 25+ subclasses)
 
 Every exception raised by claudekit is a subclass of `ClaudekitError`. All errors carry structured metadata for programmatic handling.
 

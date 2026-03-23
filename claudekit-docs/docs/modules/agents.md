@@ -1,11 +1,6 @@
----
-title: Agents
-description: Agent definition dataclass, AgentRunner (Claude Agent SDK subprocess bridge), AgentInspector, BudgetGuard, and HookBuilder.
-module: claudekit.agents
-classes: [Agent, AgentRunner, AgentResult, AgentInspector, BudgetGuard, HookBuilder]
----
-
 # Agents
+
+**Module:** `claudekit.agents` · **Classes:** `Agent`, `AgentRunner`, `AgentResult`, `AgentInspector`, `BudgetGuard`, `HookBuilder`
 
 `claudekit.agents` provides the declarative `Agent` dataclass and `AgentRunner` — a bridge to the Claude Agent SDK subprocess. Use `AgentRunner` for multi-turn agentic loops; use `TrackedClient` for simple single-turn API calls.
 

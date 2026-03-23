@@ -1,11 +1,6 @@
----
-title: Precheck
-description: TokenCounter — pre-flight token counting using the count_tokens API to prevent context window overflows before sending expensive requests.
-module: claudekit.precheck
-classes: [TokenCounter, TokenCountResult]
----
-
 # Precheck
+
+**Module:** `claudekit.precheck` · **Classes:** `TokenCounter`, `TokenCountResult`
 
 `claudekit.precheck` provides `TokenCounter` — count tokens **before** sending a request to prevent expensive surprises or context window overflows.
 

@@ -1,11 +1,6 @@
----
-title: Sessions
-description: Managed conversation sessions with lifecycle states, per-session budgets, turn limits, cost-warning callbacks, and multi-session aggregation.
-module: claudekit.sessions
-classes: [SessionManager, Session, SessionConfig, MultiSessionUsage]
----
-
 # Sessions
+
+**Module:** `claudekit.sessions` · **Classes:** `SessionManager`, `Session`, `SessionConfig`, `MultiSessionUsage`
 
 `claudekit.sessions` wraps `TrackedClient` with full conversation lifecycle management: states (`running`, `paused`, `finished`, `error`), cost/turn limits, callbacks, and multi-session aggregation.
 

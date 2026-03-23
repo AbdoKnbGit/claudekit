@@ -1,11 +1,6 @@
----
-title: Thinking
-description: Helpers for enabling extended thinking (always-on or adaptive) and extracting thinking blocks from responses.
-module: claudekit.thinking
-exports: [thinking_enabled, thinking_adaptive, thinking_disabled, extract_thinking]
----
-
 # Thinking
+
+**Module:** `claudekit.thinking` · **Exports:** `thinking_enabled`, `thinking_adaptive`, `thinking_disabled`, `extract_thinking`
 
 `claudekit.thinking` provides three config helpers and one extraction helper for Claude's extended thinking feature. All active Claude models support thinking.
 

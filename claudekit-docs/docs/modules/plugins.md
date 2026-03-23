@@ -1,11 +1,6 @@
----
-title: Plugins
-description: PluginLoader and lifecycle hook system. Built-in plugins for structured logging, cost alerts, and OpenTelemetry tracing.
-module: claudekit.plugins
-classes: [PluginLoader, Plugin, LoggingPlugin, CostAlertPlugin, OpenTelemetryPlugin]
----
-
 # Plugins
+
+**Module:** `claudekit.plugins` · **Classes:** `PluginLoader`, `Plugin`, `LoggingPlugin`, `CostAlertPlugin`, `OpenTelemetryPlugin`
 
 `claudekit.plugins` provides a lifecycle hook system. Plugins receive events at every stage of the API pipeline: requests, responses, tool calls, sessions, costs, errors, and security events.
 

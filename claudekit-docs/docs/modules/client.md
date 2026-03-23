@@ -1,11 +1,6 @@
----
-title: Client
-description: TrackedClient and AsyncTrackedClient — usage-tracking wrappers around the Anthropic SDK. Records every API call with token counts, cost, duration, and request ID.
-module: claudekit.client
-classes: [TrackedClient, AsyncTrackedClient, TrackedBedrockClient, TrackedVertexClient, TrackedFoundryClient, SessionUsage, CallRecord]
----
-
 # Client
+
+**Module:** `claudekit.client` · **Classes:** `TrackedClient`, `AsyncTrackedClient`, `TrackedBedrockClient`, `TrackedVertexClient`, `TrackedFoundryClient`, `SessionUsage`, `CallRecord`
 
 `claudekit.client` provides drop-in wrappers around the Anthropic SDK that record usage on every call. All SDK functionality is proxied transparently — no behaviour changes, only observation.
 
