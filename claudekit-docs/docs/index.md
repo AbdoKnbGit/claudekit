@@ -1,9 +1,3 @@
----
-title: claudekit Documentation
-description: Production-grade Python framework for the Anthropic ecosystem. Tracks usage, enforces security, manages memory, orchestrates agents, and provides a complete testing layer — all without replacing the underlying Anthropic SDK.
-keywords: [claudekit, anthropic, claude, python, framework, sdk, agents, security, memory, orchestration]
----
-
 # claudekit Documentation
 
 claudekit is a production-grade Python framework built on top of the Anthropic SDK. It does not replace the SDK — it extends it with the infrastructure every real application needs.
