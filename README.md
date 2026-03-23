@@ -69,31 +69,7 @@ print(client.usage.summary())
 | `claudekit.thinking` | Extended thinking helpers and token budget guidance |
 | `claudekit.precheck` | Pre-flight token counting with cost estimates |
 
----
 
-| Capability | `anthropic` SDK | claude agent sdk | claudekit |
-|---|---|---|---|
-| Send messages to API | ✅ core purpose | ❌ goes via CLI subprocess | ✅ TrackedClient |
-| Streaming (SSE) | ✅ built-in | ✅ async generator | ✅ tracked wrapper |
-| Tool use / function calling | ✅ manual loop | ✅ built-in (Bash, Read, Write…) | ✅ `@tool` decorator + ToolRegistry |
-| MCP server integration | ✅ via API connector | ✅ native | ✅ MCPServer builder |
-| Bedrock / Vertex / Foundry | ✅ AnthropicBedrock | ❌ Anthropic API only | ✅ TrackedBedrockClient, TrackedVertexClient, TrackedFoundryClient |
-| **Cost tracking per call** | ❌ read usage yourself | ⚠️ `total_cost_usd` only at the very end of a run | ✅ per-call `duration_ms`, `cost`, `request_id`, `cache_tokens` — live |
-| **Running cost budget cap** | ❌ | ❌ `max_budget_usd` on full run only | ✅ per-session and per-agent, fires at 80% warning |
-| **Persistent memory** | ❌ | ❌ write files manually | ✅ SQLite + FTS5, TTL, LRU eviction, scoped namespacing |
-| **Security policy pipeline** | ❌ | ❌ infrastructure-level only (containers, VMs) | ✅ injection, PII, jailbreak, rate-limit — in Python, before any API call |
-| **Session lifecycle** | ❌ | ❌ | ✅ pause / resume / terminate + budget enforcement |
-| **Multi-session usage aggregation** | ❌ | ❌ | ✅ `all_sessions_usage.summary()` across all tenants |
-| **Plugin lifecycle hooks** | ❌ | ⚠️ PreToolUse / PostToolUse only | ✅ `on_request`, `on_response`, `on_tool_call`, `on_session_start`, `on_error`, `on_security_event` |
-| **Prompt versioning + A/B testing** | ❌ | ❌ | ✅ `PromptManager` with diff, compare(), and template rendering |
-| **Batch management** | ⚠️ raw API only | ❌ | ✅ `BatchManager` with polling, cancellation, sidecar persistence, 50% cost discount |
-| **Skill bundles with Pydantic output** | ❌ | ❌ | ✅ `Skill(output_format=MyModel)` → returns validated dataclass, not raw text |
-| **Multi-agent routing** | ❌ | ⚠️ model decides via Task tool | ✅ `RuleRouter` / `LLMRouter` / `ManualRouter` — you control the routing |
-| **Pre-flight token counting** | ✅ `count_tokens()` (raw) | ❌ | ✅ `TokenCounter` with `fits_in_context`, `percent_used`, cost estimate |
-| **Extended thinking helpers** | ✅ raw params only | ❌ | ✅ `thinking_enabled()` / `thinking_adaptive()` with validation |
-| **Deprecated model warnings** | ❌ | ❌ | ✅ `DeprecatedModelWarning` fires on `messages.create()` automatically |
- 
----
 ## Documentation
 
 **[Full Documentation →](claudekit-docs/docs/index.md)**
